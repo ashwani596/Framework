@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="com.actitime.generic.MyTestNGListener"/>
+</listeners>
+  <test name="Test">
+  <parameter name="browserName" value="chrome"/>
+   <parameter name="baseurl" value="http://desktop-s6pe1cl/login.do"/>
+ 
+    <classes>
+      <class name="com.actitime.scripts.LoginTest"/>
+    </classes>
+  </test> 
+</suite> 
